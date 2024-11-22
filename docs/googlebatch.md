@@ -1,7 +1,7 @@
 # nf-core/configs: googlebatch Configuration
 
 To be used with the `googlebatch` profile by specifying the `-profile googlebatch` when running nf-core pipelines.
-project id and workdir bucket need to be supplied with `params.project_id`, `params.workdir_bucket `.
+project id and workdir bucket need to be supplied with `params.project_id`, `params.workdir_bucket`.
 
 ## Required Parameters
 
@@ -34,7 +34,7 @@ Defines which service account will be used by Compute instances running the pipe
 
 ### `--use_private_ip`
 
-Defines whether real IP addresses will be assigned to compute instance runningn the pipeline. Defaults to `false`. If set to `true` a Cloud NAT needs to be provisioned on the same VPC to enable workers to access the Internet to download any necessary artifacts such as container images or communicate with Tower if it is configured. It is recommeneded to use private IP addresses.
+Defines whether real IP addresses will be assigned to compute instance running the pipeline. Defaults to `false`. If set to `true` a Cloud NAT needs to be provisioned on the same VPC to enable workers to access the Internet to download any necessary artifacts such as container images or communicate with Tower if it is configured. It is recommended to use private IP addresses.
 
 ### `--custom_vpc`
 
